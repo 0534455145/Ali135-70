@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <!-- Profile Header -->
+    <header class="profile-header">
+      <div class="avatar-wrapper">
+        <img
+          class="avatar"
+          src="https://ui-avatars.com/api/?name=Alex+Johnson&size=120&background=4f46e5&color=fff&rounded=true"
+          alt="Alex Johnson avatar"
+        />
+        <span class="online-badge" aria-label="Online"></span>
+      </div>
+      <div class="profile-info">
+        <h1 class="profile-name">Alex Johnson</h1>
+        <p class="profile-title">Senior Product Designer</p>
+        <p class="profile-location">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          San Francisco, CA
+        </p>
+        <div class="profile-actions">
+          <button class="btn btn-primary">Follow</button>
+          <button class="btn btn-secondary">Message</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar" aria-label="Profile statistics">
+      <div class="stat">
+        <span class="stat-value">248</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">14.2k</span>
+        <span class="stat-label">Followers</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">392</span>
+        <span class="stat-label">Following</span>
+      </div>
+    </section>
+
+    <!-- Bio -->
+    <section class="profile-section" aria-labelledby="bio-heading">
+      <h2 id="bio-heading" class="section-title">About</h2>
+      <p class="bio-text">
+        Passionate product designer with 8+ years of experience crafting
+        user-centred digital experiences. Focused on accessibility,
+        clarity, and delight.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="profile-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-title">Skills</h2>
+      <ul class="skills-list" aria-label="Skills">
+        <li class="skill-tag">UI/UX Design</li>
+        <li class="skill-tag">Figma</li>
+        <li class="skill-tag">Prototyping</li>
+        <li class="skill-tag">Design Systems</li>
+        <li class="skill-tag">User Research</li>
+        <li class="skill-tag">Accessibility</li>
+      </ul>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="profile-section" aria-labelledby="activity-heading">
+      <h2 id="activity-heading" class="section-title">Recent Activity</h2>
+      <ul class="activity-list">
+        <li class="activity-item">
+          <span class="activity-icon" aria-hidden="true">🎨</span>
+          <div class="activity-details">
+            <p class="activity-desc">Published <strong>Design System v2.0</strong></p>
+            <time class="activity-time" datetime="2026-02-18">2 days ago</time>
+          </div>
+        </li>
+        <li class="activity-item">
+          <span class="activity-icon" aria-hidden="true">⭐</span>
+          <div class="activity-details">
+            <p class="activity-desc">Starred <strong>Open UI Components</strong></p>
+            <time class="activity-time" datetime="2026-02-15">5 days ago</time>
+          </div>
+        </li>
+        <li class="activity-item">
+          <span class="activity-icon" aria-hidden="true">💬</span>
+          <div class="activity-details">
+            <p class="activity-desc">Commented on <strong>Accessibility Guidelines</strong></p>
+            <time class="activity-time" datetime="2026-02-12">1 week ago</time>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
